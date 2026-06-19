@@ -1,3 +1,5 @@
+
+
 /* =========================
    VARIABLES
 ========================= */
@@ -34,7 +36,7 @@
 body {
   margin: 0;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font);
   color: var(--text-color);
 
   background-color: var(--background-color);
@@ -165,7 +167,7 @@ button {
 }
 
 .header-container {
-  height: 72px;
+  min-height: 72px;
 
   display: flex;
   align-items: center;
