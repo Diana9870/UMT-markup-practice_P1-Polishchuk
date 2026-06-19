@@ -415,6 +415,12 @@ button {
   text-align: center;
 }
 
+.section-description {
+  margin-bottom: 40px; 
+  color: var(--secondary-text); 
+  font-size: 16px;
+}
+
 .bouquets-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -425,7 +431,7 @@ button {
 .bouquets-list li {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
 }
 
 .bouquet-img-wrapper {
