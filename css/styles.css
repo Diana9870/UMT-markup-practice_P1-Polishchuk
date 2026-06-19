@@ -159,7 +159,6 @@ button {
 }
 
 .logo {
-  font-family: var(--title-font);
   font-size: 28px;
   line-height: 1;
   font-weight: 700;
@@ -310,7 +309,6 @@ button {
 }
 
 .hero-title {
-  font-family: var(--title-font);
   font-size: 36px;
   line-height: 1.15;
   font-weight: 700;
@@ -586,7 +584,6 @@ button {
 }
 
 .footer-logo {
-  font-family: var(--title-font);
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
