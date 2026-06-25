@@ -1,411 +1,469 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="head-container container">
+          <a href="./index.html" aria-label="Flora logo">
+            <svg width="84" height="36">
+              <use href="./images/logo.svg"></use>
+            </svg>
+          </a>
+          <nav class="navigation">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-link" href="#about-us">About Us</a>
+              </li>
+              <li>
+                <a class="header-link" href="#bestsellers">Bestsellers</a>
+              </li>
+              <li>
+                <a class="header-link" href="#bouquets">Bouquets</a>
+              </li>
+              <li>
+                <a class="header-link" href="#feedback">Feedback</a>
+              </li>
+              <li>
+                <a class="header-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="primary-btn header-btn" type="button">
+            Explore Bouquets
+          </button>
+          <button
+            class="menu-btn"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg class="menu-icon" aria-label="Mobile menu toggle">
+              <use
+                href="./images/icons.svg#menu"
+                class="menu-icon__burger"
+              ></use>
+              <use
+                href="./images/icons.svg#close"
+                class="menu-icon__close"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </header>
 
-  <title>Flora</title>
-
-  <link rel="icon" href="./favicon.ico" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="container header-container">
-
-      <a href="./index.html" class="logo">
-        Flora
-      </a>
-
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#bestsellers">Bestsellers</a></li>
-          <li><a href="#bouquets">Bouquets</a></li>
-          <li><a href="#reviews">Feedback</a></li>
-          <li><a href="#contact">Contacts</a></li>
-        </ul>
-      </nav>
-
-      <button type="button" class="header-btn">
-        Explore Bouquets
-      </button>
-
-      <button type="button" class="menu-btn" aria-label="Open menu">
-        <svg width="24" height="24">
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-
-    </div>
-  </header>
-
-  <div class="mobile-menu">
-
-    <div class="mobile-menu-container">
-
-      <button type="button" class="mobile-close-btn" aria-label="Close menu">
-        <svg width="24" height="24">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu-list">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#bestsellers">Bestsellers</a></li>
-        <li><a href="#bouquets">Bouquets</a></li>
-        <li><a href="#reviews">Feedback</a></li>
-        <li><a href="#contact">Contacts</a></li>
-      </ul>
-
-    </div>
-
-  </div>
-
-  <main>
-
-    <section class="hero">
-      <div class="container hero-container">
-
-        <div class="hero-content" data-aos="fade-up">
-
+      <section class="hero">
+        <div class="hero-section container">
           <h1 class="hero-title">
             Brighten Your Day with Our Stunning Bouquets
           </h1>
-
-          <p class="hero-text">
-            At Flora, we believe that every occasion deserves
-            a beautiful bouquet. Our expertly crafted arrangements
-            are designed to bring joy and elegance to your celebrations.
+          <p class="hero-desc">
+            At Flora, we believe that every occasion deserves a beautiful
+            bouquet. Our expertly crafted arrangements are designed to bring joy
+            and elegance to your celebrations.
           </p>
-
-          <button type="button" class="hero-btn">
+          <button class="primary-btn hero-btn" type="button">
             Explore Our Bestsellers
           </button>
+        </div>
+      </section>
 
+      <section class="about-section" id="about-us">
+        <div class="about-container container">
+          <div class="about-content">
+            <svg width="96" height="85" aria-label="flower">
+              <use href="./images/icons.svg#flower"></use>
+            </svg>
+            <h2 class="about-title">Our Passion for Floral Artistry</h2>
+            <p class="about-desc">
+              At Flora, we believe that every bouquet tells a story. Our team
+              meticulously crafts each arrangement, blending creativity with the
+              freshest blooms to create stunning pieces for every occasion.
+            </p>
+          </div>
+
+          <img
+            class="about-img"
+            src="./images/white-peony-flowers@1x.webp"
+            srcset="./images/white-peony-flowers@2x.webp 2x"
+            alt="White Peony"
+          />
+        </div>
+      </section>
+
+      <section class="sell-section" id="bestsellers">
+        <div class="bestsellers-wrapper container">
+          <h2 class="sell-title">Top-Selling Bouquets</h2>
+          <ul class="bestsellers-list">
+            <li class="card">
+              <img
+                class="selling-img"
+                src="./images/spring-elegance.webp"
+                alt="Spring Elegance"
+              />
+              <h3 class="card-title">Spring Elegance</h3>
+              <p>$35</p>
+            </li>
+
+            <li class="card">
+              <img
+                class="selling-img"
+                src="./images/berry-chic.webp"
+                alt="Berry Chic"
+              />
+              <h3>Berry Chic</h3>
+              <p>$40</p>
+            </li>
+
+            <li class="card">
+              <img
+                class="selling-img"
+                src="./images/lavender-dream.webp"
+                alt="Lavender Dream"
+              />
+              <h3>Lavender Dream</h3>
+              <p>$55</p>
+            </li>
+          </ul>
         </div>
 
-        <div class="hero-image-wrapper" data-aos="fade-up">
-           <img src="./images/hero.webp" fetchpriority="high" alt="Beautiful flower bouquet" width="650" height="500" class="hero-image" />
+        <div class="pagination-container">
+          <ul class="pagination-dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+          </ul>
+
+          <div class="btn-wrapper">
+            <button class="pagination-btn" type="button">
+              <svg class="pagination-icon">
+                <use href="./images/icons.svg#left-arrow"></use>
+              </svg>
+            </button>
+            <button class="pagination-btn" type="button">
+              <svg class="pagination-icon">
+                <use href="./images/icons.svg#right-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <section class="about section" id="about">
-      <div class="container about-container">
-
-        <div class="about-content">
-
-          <img src="./images/flower-icon.png" loading="lazy" alt="Flower icon" width="96" height="85" class="about-icon" />
-
-          <h2 class="section-title">
-            Our Passion for Floral Artistry
-          </h2>
-
-          <p class="about-text">
-            At Flora, we believe that every bouquet tells a story.
-            Our team meticulously crafts each arrangement,
-            blending creativity with the freshest blooms
-            to create stunning pieces for every occasion.
+      <section class="bouquet-section" id="bouquets">
+        <div class="bouquet-container container">
+          <h2 class="bouquet-title">Bouquets</h2>
+          <p class="bouquet-desc">
+            Explore our stunning selection of fresh flower bouquets.
           </p>
 
+          <ul class="bouquet-list">
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/peach-meadow.webp"
+                alt="Peach Meadow"
+              />
+              <h3 class="bouquet-name">Peach Meadow</h3>
+              <p class="bouquet-price">$55</p>
+            </li>
+
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/blush-romance.webp"
+                alt="Blush Romance"
+              />
+              <h3 class="bouquet-name">Blush Romance</h3>
+              <p class="bouquet-price">$34</p>
+            </li>
+
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/pastel-garden.webp"
+                alt="Pastel Garden"
+              />
+              <h3 class="bouquet-name">Pastel Garden</h3>
+              <p class="bouquet-price">$40</p>
+            </li>
+
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/tulip-charm.webp"
+                alt="Tulip Charm"
+              />
+              <h3 class="bouquet-name">Tulip Charm</h3>
+              <p class="bouquet-price">$61</p>
+            </li>
+
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/berry-bloom.webp"
+                alt="Berry Bloom"
+              />
+              <h3 class="bouquet-name">Berry Bloom</h3>
+              <p class="bouquet-price">$32</p>
+            </li>
+
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/sweet-whisper.webp"
+                alt="Sweet Whisper"
+              />
+              <h3 class="bouquet-name">Sweet Whisper</h3>
+              <p class="bouquet-price">$40</p>
+            </li>
+
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/field-joy.webp"
+                alt="Field Joy"
+              />
+              <h3 class="bouquet-name">Field Joy</h3>
+              <p class="bouquet-price">$49</p>
+            </li>
+
+            <li class="bouquet-card">
+              <img
+                class="bouquet-img"
+                src="./images/soft-bloom.webp"
+                alt="Soft Bloom"
+              />
+              <h3 class="bouquet-name">Soft Bloom</h3>
+              <p class="bouquet-price">$37</p>
+            </li>
+          </ul>
+          <button class="primary-btn bouquet-btn" type="button">
+            Show More
+          </button>
         </div>
+      </section>
 
-        <div class="about-image-wrapper">
-           <img src="./images/florist.webp" loading="lazy" alt="Florist creating bouquet" width="600" height="428" class="about-image" />
+      <section class="feedback-section" id="feedback">
+        <div class="container">
+          <h2 class="feedback-title">What our clients says</h2>
+          <ul class="feedback-list">
+            <li class="feedback-card">
+              <p class="feedback-quote">
+                "Flora made my anniversary unforgettable with their beautiful
+                arrangement!"
+              </p>
+              <p>Emma T.</p>
+            </li>
+            <li class="feedback-card">
+              <p class="feedback-quote">
+                Absolutely stunning bouquet! It looked even better than the
+                photo and arrived right on time.
+              </p>
+              <p>Daniel R.</p>
+            </li>
+            <li class="feedback-card">
+              <p class="feedback-quote">
+                The service was exceptional, and the flowers were fresh!
+              </p>
+              <p>Olivia M.</p>
+            </li>
+          </ul>
+
+          <div class="feedback-btn-wrapper">
+            <button class="pagination-btn" type="button">
+              <svg class="pagination-icon">
+                <use href="./images/icons.svg#left-arrow"></use>
+              </svg>
+            </button>
+            <button class="pagination-btn" type="button">
+              <svg class="pagination-icon">
+                <use href="./images/icons.svg#right-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <section class="bestsellers section" id="bestsellers">
-
-      <div class="container">
-
-        <h2 class="section-title">
-          Top-Selling Bouquets
-        </h2>
-
-        <ul class="bestsellers-list">
-
-          <li class="bestseller-card" data-aos="fade-up">
-            <div class="bestseller-img-wrapper">
-               <img src="./images/bestseller-1.webp" loading="lazy" alt="Spring Elegance" width="405" height="320" />
+      <section class="connect-section" id="contacts">
+        <div class="container">
+          <div class="connect-info">
+            <div>
+              <p class="connect-tagline">Connect</p>
+              <h2 class="connect-headline">Get in Touch</h2>
+              <p class="connect-text">
+                We’re here to assist you with all your floral needs and
+                inquiries.
+              </p>
             </div>
-            <h3>Spring Elegance</h3>
-            <p>$35</p>
-          </li>
 
-          <li class="bestseller-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="bestseller-img-wrapper">
-               <img src="./images/bestseller-2.webp" loading="lazy" alt="Berry Chic" width="405" height="320" />
+            <div class="conection-contacts">
+              <div class="connect-info-wrap container">
+                <svg
+                  class="connect-icon"
+                  width="24"
+                  height="24"
+                  aria-label="phone"
+                >
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+                <div class="connect-info-text">
+                  <p>Phone</p>
+                  <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                </div>
+              </div>
+
+              <div class="connect-info-wrap">
+                <svg width="24" height="24" aria-label="location">
+                  <use href="./images/icons.svg#map"></use>
+                </svg>
+                <div class="connect-info-text">
+                  <p>Store</p>
+                  <a
+                    href="https://maps.app.goo.gl/M3gioUTRiC64Ye5E7"
+                    target="_blank"
+                    >456 Floral Ave, Sydney NSW 2000 AU</a
+                  >
+                </div>
+              </div>
             </div>
-            <h3>Berry Chic</h3>
-            <p>$40</p>
-          </li>
+          </div>
 
-          <li class="bestseller-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="bestseller-img-wrapper">
-               <img src="./images/bestseller-3.webp" loading="lazy" alt="Lavender Dream" width="405" height="320" />
-            </div>
-            <h3>Lavender Dream</h3>
-            <p>$55</p>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </section>
-
-    <section class="bouquets section" id="bouquets">
-
-      <div class="container">
-
-        <h2 class="section-title">
-          Bouquets
-        </h2>
-
-        <p class="section-description">
-          Explore our stunning selection of fresh flower bouquets.
-        </p>
-
-        <ul class="bouquets-list">
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-1.webp" loading="lazy" alt="Peach Meadow" width="296" height="296">
-            </div>
-            <h3>Peach Meadow</h3>
-            <p>$55</p>
-          </li>
-
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-2.webp" loading="lazy" alt="Blush Romance" width="296" height="296">
-            </div>
-            <h3>Blush Romance</h3>
-            <p>$34</p>
-          </li>
-
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-3.webp" loading="lazy" alt="Pastel Garden" width="296" height="296">
-            </div>
-            <h3>Pastel Garden</h3>
-            <p>$40</p>
-          </li>
-
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-4.webp" loading="lazy" alt="Tulip Charm" width="296" height="296">
-            </div>
-            <h3>Tulip Charm</h3>
-            <p>$61</p>
-          </li>
-
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-5.webp" loading="lazy" alt="Berry Bloom" width="296" height="296">
-            </div>
-            <h3>Berry Bloom</h3>
-            <p>$32</p>
-          </li>
-
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-6.webp" loading="lazy" alt="Sweet Whisper" width="296" height="296">
-            </div>
-            <h3>Sweet Whisper</h3>
-            <p>$40</p>
-          </li>
-
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-7.webp" loading="lazy" alt="Field Joy" width="296" height="296">
-            </div>
-            <h3>Field Joy</h3>
-            <p>$49</p>
-          </li>
-
-          <li>
-            <div class="bouquet-img-wrapper">
-              <img src="./images/bouquet-8.webp" loading="lazy" alt="Soft Bloom" width="296" height="296">
-            </div>
-            <h3>Soft Bloom</h3>
-            <p>$37</p>
-          </li>
-
-        </ul>
-
-        <button type="button" class="show-more-btn">
-          Show More
-        </button>
-
-      </div>
-
-    </section>
-
-    <section class="reviews section" id="reviews">
-
-      <div class="container">
-
-        <h2 class="section-title">
-          What our clients says
-        </h2>
-
-        <ul class="reviews-list">
-
-          <li class="review-card">
-            <p>
-              "Flora made my anniversary unforgettable
-              with their beautiful arrangement!"
-            </p>
-            <h3>Emma T.</h3>
-          </li>
-
-          <li class="review-card">
-            <p>
-              "Absolutely stunning bouquet!
-              It looked even better than the photo."
-            </p>
-            <h3>Daniel R.</h3>
-          </li>
-
-          <li class="review-card">
-            <p>
-              "The service was exceptional,
-              and the flowers were fresh!"
-            </p>
-            <h3>Olivia M.</h3>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </section>
-
-    <section class="contact section" id="contact">
-
-      <div class="container">
-
-        <span class="contact-label">
-          Connect
-        </span>
-
-        <h2 class="section-title">
-          Get in Touch
-        </h2>
-
-        <p class="contact-text">
-          We're here to assist you with all your floral needs and inquiries.
-        </p>
-
-        <ul class="contact-list">
-
-          <li>
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-
-            <a href="tel:+11151234567">
-              +1 (555) 123-4567
-            </a>
-          </li>
-
-          <li>
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-location"></use>
-            </svg>
-
-            <p>
-              455 Floral Ave,
-              Sydney NSW 2000 AU
-            </p>
-          </li>
-
-        </ul>
-
-        <div class="contact-image-wrapper">
-          <img src="./images/contact.webp" loading="lazy" alt="Flower shop" width="1280" height="720" class="contact-image" />
+          <img
+            class="connect-img"
+            src="./images/flower-shop@1x.webp"
+            srcset="./images/flower-shop@2x.webp 2x"
+            width="1280"
+            alt="Flower Shop"
+          />
         </div>
+      </section>
+    </main>
 
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer class="footer">
-
-    <div class="container">
-
-      <a href="./index.html" class="footer-logo">
-        Flora
-      </a>
-
-      <ul class="footer-nav">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#bestsellers">Bestsellers</a></li>
-        <li><a href="#bouquets">Bouquets</a></li>
-        <li><a href="#reviews">Feedback</a></li>
-        <li><a href="#contact">Contacts</a></li>
-      </ul>
-
-      <ul class="social-list">
-
-        <li>
-          <a href="#">
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-facebook"></use>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-wrap">
+          <a
+            class="footer-logo-link"
+            href="./index.html"
+            aria-label="Flora logo"
+          >
+            <svg class="footer-logo">
+              <use href="./images/logo.svg"></use>
             </svg>
           </a>
-        </li>
+          <ul class="footer-nav-list">
+            <li class="footer-link">
+              <a href="#about-us">About Us</a>
+            </li>
+            <li class="footer-link">
+              <a href="#bestsellers">Bestsellers</a>
+            </li>
+            <li class="footer-link">
+              <a href="#bouquets">Bouquets</a>
+            </li>
+            <li class="footer-link">
+              <a href="#feedback">Feedback</a>
+            </li>
+            <li class="footer-link">
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
 
-        <li>
-          <a href="#">
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
+          <ul class="footer-socials-list">
+            <li class="footer-icon">
+              <a
+                class="footer-social-link"
+                href="https://www.facebook.com/?locale=uk_UA"
+                aria-label="facebook"
+              >
+                <svg class="footer-social-svg">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a
+                class="footer-social-link"
+                href="https://www.instagram.com/"
+                aria-label="instagram"
+              >
+                <svg class="footer-social-svg">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a
+                class="footer-social-link"
+                href="https://www.facebook.com/?locale=uk_UA"
+                aria-label="X"
+              >
+                <svg class="footer-social-svg">
+                  <use href="./images/icons.svg#X"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-credit">
+          <hr class="footer-line" />
+          <p class="footer-credit-text">© 2025 Flora. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-        <li>
-          <a href="#">
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-x"></use>
-            </svg>
-          </a>
-        </li>
+    <!-- Mobile Menu -->
 
-      </ul>
-
-      <p class="copyright">
-        © 2025 Flora. All rights reserved.
-      </p>
-
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="dialog"
+      aria-labelledby="Mobile menu toggle"
+      data-menu
+    >
+      <nav class="menu-navigation">
+        <ul class="menu-navigation-list">
+          <li>
+            <a class="menu-link" href="#about-us">About Us</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#bestsellers">Bestsellers</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#bouquets">Bouquets</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#feedback">Feedback</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="primary-btn menu-action-btn" type="button">
+        Explore Bouquets
+      </button>
     </div>
-
-  </footer>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, 
-      once: true,   
-    });
-  </script>
-
-</body>
+  </body>
 </html>
