@@ -954,8 +954,6 @@ height:24px;
     display: block;
   }
 
-  /* Картки займають однакову ширину */
-
   .card {
     flex: 1;
   }
@@ -1002,7 +1000,9 @@ height:24px;
   }
 
   .feedback-card {
-    flex: 1;
+    width: calc((100% - 64px) / 3); 
+    display: flex;
+    flex-direction: column;
   }
 
   /* CONNECT */
