@@ -516,7 +516,7 @@ height:24px;
 
 .feedback-author {
   font-weight: 600;
-  margin: 0;
+  margin-top: auto;
 }
 
 .feedback-btn-wrapper {
