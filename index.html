@@ -17,7 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
     <link rel="stylesheet" href="./styles/styles.css" />
+
   </head>
   <body>
     <main>
@@ -70,7 +75,7 @@
         </div>
       </header>
 
-      <section class="hero">
+      <section class="hero" data-aos="fade-up">
         <div class="hero-section container">
           <h1 class="hero-title">
             Brighten Your Day with Our Stunning Bouquets
@@ -86,7 +91,7 @@
         </div>
       </section>
 
-      <section class="about-section" id="about-us">
+      <section class="about-section" id="about-us" data-aos="fade-right">
         <div class="about-container container">
           <div class="about-content">
             <svg width="96" height="85" aria-label="flower">
@@ -104,19 +109,23 @@
             class="about-img"
             src="./images/white-peony-flowers@1x.webp"
             srcset="./images/white-peony-flowers@2x.webp 2x"
+            width="310"
+            height="421"
             alt="White Peony"
           />
         </div>
       </section>
 
-      <section class="sell-section" id="bestsellers">
+      <section class="sell-section" id="bestsellers" data-aos="fade-up">
         <div class="bestsellers-wrapper container">
           <h2 class="sell-title">Top-Selling Bouquets</h2>
           <ul class="bestsellers-list">
             <li class="card">
               <img
-                class="selling-img"
+                class="top-selling-img"
                 src="./images/spring-elegance.webp"
+                width="405"
+                height="320"
                 alt="Spring Elegance"
               />
               <h3 class="card-title">Spring Elegance</h3>
@@ -125,8 +134,10 @@
 
             <li class="card">
               <img
-                class="selling-img"
+                class="top-selling-img"
                 src="./images/berry-chic.webp"
+                width="405"
+                height="320"
                 alt="Berry Chic"
               />
               <h3>Berry Chic</h3>
@@ -135,8 +146,10 @@
 
             <li class="card">
               <img
-                class="selling-img"
+                class="top-selling-img"
                 src="./images/lavender-dream.webp"
+                width="405"
+                height="320"
                 alt="Lavender Dream"
               />
               <h3>Lavender Dream</h3>
@@ -170,7 +183,7 @@
         </div>
       </section>
 
-      <section class="bouquet-section" id="bouquets">
+      <section class="bouquet-section" id="bouquets" data-aos="fade-up">
         <div class="bouquet-container container">
           <h2 class="bouquet-title">Bouquets</h2>
           <p class="bouquet-desc">
@@ -182,6 +195,8 @@
               <img
                 class="bouquet-img"
                 src="./images/peach-meadow.webp"
+                width="296"
+                height="296"
                 alt="Peach Meadow"
               />
               <h3 class="bouquet-name">Peach Meadow</h3>
@@ -192,6 +207,8 @@
               <img
                 class="bouquet-img"
                 src="./images/blush-romance.webp"
+                width="296"
+                height="296"
                 alt="Blush Romance"
               />
               <h3 class="bouquet-name">Blush Romance</h3>
@@ -202,6 +219,8 @@
               <img
                 class="bouquet-img"
                 src="./images/pastel-garden.webp"
+                width="296"
+                height="296"
                 alt="Pastel Garden"
               />
               <h3 class="bouquet-name">Pastel Garden</h3>
@@ -212,6 +231,8 @@
               <img
                 class="bouquet-img"
                 src="./images/tulip-charm.webp"
+                width="296"
+                height="296"
                 alt="Tulip Charm"
               />
               <h3 class="bouquet-name">Tulip Charm</h3>
@@ -222,6 +243,8 @@
               <img
                 class="bouquet-img"
                 src="./images/berry-bloom.webp"
+                width="296"
+                height="296"
                 alt="Berry Bloom"
               />
               <h3 class="bouquet-name">Berry Bloom</h3>
@@ -232,6 +255,8 @@
               <img
                 class="bouquet-img"
                 src="./images/sweet-whisper.webp"
+                width="296"
+                height="296"
                 alt="Sweet Whisper"
               />
               <h3 class="bouquet-name">Sweet Whisper</h3>
@@ -242,6 +267,8 @@
               <img
                 class="bouquet-img"
                 src="./images/field-joy.webp"
+                width="296"
+                height="296"
                 alt="Field Joy"
               />
               <h3 class="bouquet-name">Field Joy</h3>
@@ -252,6 +279,8 @@
               <img
                 class="bouquet-img"
                 src="./images/soft-bloom.webp"
+                width="296"
+                height="296"
                 alt="Soft Bloom"
               />
               <h3 class="bouquet-name">Soft Bloom</h3>
@@ -305,7 +334,7 @@
         </div>
       </section>
 
-      <section class="connect-section" id="contacts">
+      <section class="connect-section" id="contacts" data-aos="fade-up">
         <div class="container">
           <div class="connect-info">
             <div>
@@ -442,7 +471,7 @@
       aria-labelledby="Mobile menu toggle"
       data-menu
     >
-      <nav class="menu-navigation">
+      <div class="menu-navigation">
         <ul class="menu-navigation-list">
           <li>
             <a class="menu-link" href="#about-us">About Us</a>
@@ -460,10 +489,16 @@
             <a class="menu-link" href="#contacts">Contacts</a>
           </li>
         </ul>
-      </nav>
+      </div>
       <button class="primary-btn menu-action-btn" type="button">
         Explore Bouquets
       </button>
     </div>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
