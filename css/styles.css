@@ -498,7 +498,6 @@ height:24px;
 .feedback-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   min-height: 228px;
 
@@ -511,6 +510,11 @@ height:24px;
 .feedback-quote {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.feedback-author {
+  margin-top: auto;
+  font-weight: 600;
 }
 
 .feedback-btn-wrapper {
