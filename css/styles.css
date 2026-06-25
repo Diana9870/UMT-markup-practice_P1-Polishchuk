@@ -484,6 +484,7 @@ height:24px;
 
 .feedback-list {
   display: flex;
+  align-items: stretch;
   flex-direction: column;
   gap: 24px;
 
@@ -498,23 +499,18 @@ height:24px;
 .feedback-card {
   display: flex;
   flex-direction: column;
-
   min-height: 228px;
-
   padding: 32px;
-
   border: 1px solid rgba(3, 12, 1, 0.15);
   border-radius: 16px;
 }
 
 .feedback-quote {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.5;
+  margin: 0 0 32px;
 }
 
 .feedback-author {
-  margin: auto 0 0;
+  margin: 0;
   font-weight: 600;
 }
 
@@ -999,7 +995,7 @@ height:24px;
   }
 
   .feedback-card {
-    width: calc((100% - 64px) / 3); 
+    flex: 1;
     display: flex;
     flex-direction: column;
   }
