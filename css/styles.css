@@ -499,7 +499,7 @@ height:24px;
   display: flex;
   flex-direction: column;
 
-  height: 228px;
+  min-height: 228px;
 
   padding: 32px;
 
@@ -508,15 +508,14 @@ height:24px;
 }
 
 .feedback-quote {
-  flex-grow: 1;
-
+  margin: 0;
   font-size: 18px;
   line-height: 1.5;
 }
 
 .feedback-author {
+  margin: auto 0 0;
   font-weight: 600;
-  margin-top: auto;
 }
 
 .feedback-btn-wrapper {
