@@ -128,6 +128,8 @@
                 src="./images/spring-elegance.webp"
                 width="405"
                 height="320"
+                loading="lazy"
+                decoding="async"
                 alt="Spring Elegance"
               />
               <h3 class="card-title">Spring Elegance</h3>
@@ -140,6 +142,8 @@
                 src="./images/berry-chic.webp"
                 width="405"
                 height="320"
+                loading="lazy"
+                decoding="async"
                 alt="Berry Chic"
               />
               <h3>Berry Chic</h3>
@@ -152,6 +156,8 @@
                 src="./images/lavender-dream.webp"
                 width="405"
                 height="320"
+                loading="lazy"
+                decoding="async"
                 alt="Lavender Dream"
               />
               <h3>Lavender Dream</h3>
@@ -199,6 +205,8 @@
                 src="./images/peach-meadow.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Peach Meadow"
               />
               <h3 class="bouquet-name">Peach Meadow</h3>
@@ -211,6 +219,8 @@
                 src="./images/blush-romance.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Blush Romance"
               />
               <h3 class="bouquet-name">Blush Romance</h3>
@@ -223,6 +233,8 @@
                 src="./images/pastel-garden.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Pastel Garden"
               />
               <h3 class="bouquet-name">Pastel Garden</h3>
@@ -235,6 +247,8 @@
                 src="./images/tulip-charm.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Tulip Charm"
               />
               <h3 class="bouquet-name">Tulip Charm</h3>
@@ -247,6 +261,8 @@
                 src="./images/berry-bloom.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Berry Bloom"
               />
               <h3 class="bouquet-name">Berry Bloom</h3>
@@ -259,6 +275,8 @@
                 src="./images/sweet-whisper.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Sweet Whisper"
               />
               <h3 class="bouquet-name">Sweet Whisper</h3>
@@ -271,6 +289,8 @@
                 src="./images/field-joy.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Field Joy"
               />
               <h3 class="bouquet-name">Field Joy</h3>
@@ -283,6 +303,8 @@
                 src="./images/soft-bloom.webp"
                 width="296"
                 height="296"
+                loading="lazy"
+                decoding="async"
                 alt="Soft Bloom"
               />
               <h3 class="bouquet-name">Soft Bloom</h3>
@@ -386,6 +408,8 @@
             srcset="./images/flower-shop@2x.webp 2x"
             width="1280"
             height="720"
+            loading="lazy"
+            decoding="async"
             alt="Flower Shop"
           />
         </div>
@@ -497,10 +521,12 @@
         Explore Bouquets
       </button>
     </div>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script>
-      AOS.init();
+      document.addEventListener('DOMContentLoaded', () => {
+        AOS.init();
+      });
     </script>
 
   </body>
