@@ -143,6 +143,11 @@ body.menu-open {
 
 }
 
+.header-logo {
+  width: 84px;
+  height: auto;
+}
+
 .header-nav-list,
 .header-btn{
   display:none;
