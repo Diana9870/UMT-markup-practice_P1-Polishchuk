@@ -579,10 +579,21 @@
         });
 
         links.forEach(link => {
-          link.addEventListener('click', () => {
+          link.addEventListener('click', event => {
+            event.preventDefault();
+
+            const target = document.querySelector(link.getAttribute('href'));
+
             menu.classList.remove('is-open');
             button.classList.remove('is-open');
             button.setAttribute('aria-expanded', 'false');
+
+            setTimeout(() => {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }, 250);
           });
         });
       });
