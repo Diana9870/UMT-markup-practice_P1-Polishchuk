@@ -1069,3 +1069,17 @@ height:24px;
   }
 
 }
+
+/* SCROLL OFFSET */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about-us,
+#bestsellers,
+#bouquets,
+#feedback,
+#contacts {
+  scroll-margin-top: 80px;
+}
