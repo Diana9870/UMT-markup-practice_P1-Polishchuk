@@ -134,7 +134,10 @@
                 decoding="async"
                 alt="Spring Elegance"
               />
-              <h3 class="card-title">Spring Elegance</h3>
+              <h3 class="top-selling-title">Spring Elegance</h3>
+              <p class="top-selling-text">
+                  A delicate blend of peonies, tulips, and roses — perfect for springtime gifting and bright smiles.
+              </p>
               <p>$35</p>
             </li>
 
@@ -149,6 +152,9 @@
                 alt="Berry Chic"
               />
               <h3>Berry Chic</h3>
+              <p class="top-selling-text">
+                  A stylish composition of roses, seasonal greenery, and vibrant berries — a bold and elegant floral statement.
+              </p>
               <p>$40</p>
             </li>
 
@@ -163,6 +169,9 @@
                 alt="Lavender Dream"
               />
               <h3>Lavender Dream</h3>
+              <p class="top-selling-text">
+                  A rich bouquet with lavender, lisianthus, and roses — ideal for those who love deep hues and gentle fragrance.
+              </p>
               <p>$55</p>
             </li>
           </ul>
@@ -212,6 +221,9 @@
                 alt="Peach Meadow"
               />
               <h3 class="bouquet-name">Peach Meadow</h3>
+              <p class="bouquet-text">
+                  A soft and radiant arrangement of peach and blush roses with lush greenery in a straw basket — light and natural.
+              </p>
               <p class="bouquet-price">$55</p>
             </li>
 
@@ -226,6 +238,9 @@
                 alt="Blush Romance"
               />
               <h3 class="bouquet-name">Blush Romance</h3>
+              <p class="bouquet-text">
+                  A premium bouquet of deep pink and ivory roses, complemented by silver eucalyptus — sophisticated and intimate.
+              </p>
               <p class="bouquet-price">$34</p>
             </li>
 
@@ -240,6 +255,9 @@
                 alt="Pastel Garden"
               />
               <h3 class="bouquet-name">Pastel Garden</h3>
+              <p class="bouquet-text">
+                  A pastel-toned mix of spray roses and greenery in a woven basket — gentle, airy, and perfect for any occasion.
+              </p>
               <p class="bouquet-price">$40</p>
             </li>
 
@@ -254,6 +272,9 @@
                 alt="Tulip Charm"
               />
               <h3 class="bouquet-name">Tulip Charm</h3>
+              <p class="bouquet-text">
+                  A vivid bouquet of bright tulips and roses in a lavender box — cheerful and full of charm.
+              </p>
               <p class="bouquet-price">$61</p>
             </li>
 
@@ -268,6 +289,9 @@
                 alt="Berry Bloom"
               />
               <h3 class="bouquet-name">Berry Bloom</h3>
+              <p class="bouquet-text">
+                  A lush mix of rich pink, purple, and cream blooms with textured greens — romantic and elegant.
+              </p>
               <p class="bouquet-price">$32</p>
             </li>
 
@@ -282,6 +306,9 @@
                 alt="Sweet Whisper"
               />
               <h3 class="bouquet-name">Sweet Whisper</h3>
+              <p class="bouquet-text">
+                  A charming spring bouquet with peonies, roses, and lilac-toned accents — fresh, lively, and expressive.
+              </p>
               <p class="bouquet-price">$40</p>
             </li>
 
@@ -296,6 +323,9 @@
                 alt="Field Joy"
               />
               <h3 class="bouquet-name">Field Joy</h3>
+              <p class="bouquet-text">
+                  A rustic hand-tied bouquet of sunflowers, lisianthus, and daisies — perfect for brightening the day.
+              </p>
               <p class="bouquet-price">$49</p>
             </li>
 
@@ -310,6 +340,9 @@
                 alt="Soft Bloom"
               />
               <h3 class="bouquet-name">Soft Bloom</h3>
+              <p class="bouquet-text">
+                  A delicate bouquet of pink carnations and roses wrapped in satin paper — soft, stylish, and versatile.
+              </p>
               <p class="bouquet-price">$37</p>
             </li>
           </ul>
@@ -474,7 +507,7 @@
             <li class="footer-icon">
               <a
                 class="footer-social-link"
-                href="https://www.facebook.com/?locale=uk_UA"
+                href="https://x.com"
                 aria-label="X"
               >
                 <svg class="footer-social-svg">
@@ -525,11 +558,31 @@
     </div>
     <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-    <script>
+      <script>
       document.addEventListener('DOMContentLoaded', () => {
         AOS.init();
+
+        const menu = document.querySelector('[data-menu]');
+        const button = document.querySelector('[data-menu-button]');
+        const links = document.querySelectorAll('.menu-link');
+
+        button.addEventListener('click', () => {
+          menu.classList.toggle('is-open');
+          button.classList.toggle('is-open');
+
+          const expanded = button.classList.contains('is-open');
+          button.setAttribute('aria-expanded', expanded);
+        });
+
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+            menu.classList.remove('is-open');
+            button.classList.remove('is-open');
+            button.setAttribute('aria-expanded', 'false');
+          });
+        });
       });
-    </script>
+      </script>
 
   </body>
 </html>

@@ -315,11 +315,23 @@ margin-bottom:16px;
 
 }
 
-.card-title{
+.top-selling-title{
 
 margin-bottom:8px;
 
 }
+
+.top-selling-text {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--text-color);
+}
+
 
 .pagination-dots{
 
@@ -453,6 +465,17 @@ height:24px;
 .bouquet-name {
   margin-bottom: 8px;
   text-align: center;
+}
+
+.bouquet-text {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--text-color);
 }
 
 .bouquet-price {
